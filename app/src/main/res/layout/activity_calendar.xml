@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="?attr/colorSurface">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:titleTextColor="@android:color/white">
+
+            <TextView
+                android:id="@+id/textViewMonth1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:text="June 2023" />
+        </com.google.android.material.appbar.MaterialToolbar>
+
+        <!-- Month Navigation -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:background="?attr/colorPrimarySurface">
+
+            <Button
+                android:id="@+id/buttonPrevMonth1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/prev_month"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:textColor="?attr/colorOnPrimary"/>
+
+            <Button
+                android:id="@+id/buttonNextMonth1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/next_month"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:textColor="?attr/colorOnPrimary"/>
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Day Headers -->
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="7"
+                android:background="?attr/colorPrimaryContainer">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:text="@string/sun"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textColor="?attr/colorOnPrimaryContainer"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:text="@string/mon"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textColor="?attr/colorOnPrimaryContainer"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:text="@string/tue"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textColor="?attr/colorOnPrimaryContainer"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:text="@string/thu"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textColor="?attr/colorOnPrimaryContainer"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:text="@string/fri"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textColor="?attr/colorOnPrimaryContainer"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:text="@string/sat"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textColor="?attr/colorOnPrimaryContainer"/>
+            </GridLayout>
+
+            <!-- Calendar Grid -->
+            <GridView
+                android:id="@+id/gridViewCalendar1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:minHeight="400dp"
+                android:numColumns="7"
+                android:verticalSpacing="1dp"
+                android:horizontalSpacing="1dp"
+                android:stretchMode="columnWidth"
+                android:background="?attr/colorSurfaceVariant"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

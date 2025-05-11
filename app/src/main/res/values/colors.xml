@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Material Design 3 Color System -->
+    <color name="md_primary">#6750A4</color>
+    <color name="md_primary_container">#EADDFF</color>
+    <color name="md_on_primary">#FFFFFF</color>
+    <color name="md_on_primary_container">#21005D</color>
+
+    <color name="md_secondary">#625B71</color>
+    <color name="md_secondary_container">#E8DEF8</color>
+    <color name="md_on_secondary">#FFFFFF</color>
+    <color name="md_on_secondary_container">#1D192B</color>
+
+    <color name="md_tertiary">#7D5260</color>
+    <color name="md_tertiary_container">#FFD8E4</color>
+    <color name="md_on_tertiary">#FFFFFF</color>
+    <color name="md_on_tertiary_container">#31111D</color>
+
+    <color name="md_error">#B3261E</color>
+    <color name="md_error_container">#F9DEDC</color>
+    <color name="md_on_error">#FFFFFF</color>
+    <color name="md_on_error_container">#410E0B</color>
+
+    <color name="md_background">#FFFBFE</color>
+    <color name="md_surface">#FFFBFE</color>
+    <color name="md_surface_variant">#E7E0EC</color>
+    <color name="md_on_background">#1C1B1F</color>
+    <color name="md_on_surface">#1C1B1F</color>
+    <color name="md_on_surface_variant">#49454F</color>
+
+    <!-- App-Specific Colors -->
+    <color name="colorPrimary">@color/md_primary</color>
+    <color name="colorPrimaryDark">@color/md_primary_container</color>
+    <color name="colorAccent">@color/md_secondary</color>
+
+    <!-- Text Colors -->
+    <color name="primaryText">@color/md_on_background</color>
+    <color name="secondaryText">@color/md_on_surface_variant</color>
+
+    <!-- Component Colors -->
+    <color name="card_background">@color/md_surface</color>
+    <color name="completed_background">#E8F5E9</color>
+
+    <!-- Category Colors -->
+    <color name="health_category">#FF5252</color>
+    <color name="productivity_category">#448AFF</color>
+    <color name="wellness_category">#69F0AE</color>
+    <color name="other_category">#B388FF</color>
+
+    <!-- Basic Colors (kept for compatibility) -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="purple_200_dark">#FFBB86FC</color>
+    <color name="purple_500_dark">#FFBB86FC</color>
+    <color name="teal_200_dark">#FF03DAC5</color>
+
+
+</resources>

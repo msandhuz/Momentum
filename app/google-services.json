@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "900174031640",
+    "project_id": "momentum-habit-tracker-ab18e",
+    "storage_bucket": "momentum-habit-tracker-ab18e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:900174031640:android:dca2512775fa8268510c6d",
+        "android_client_info": {
+          "package_name": "com.momentum.habittracker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUuRHWAuHGzzg_ilJZfoKA3f0GmlzNWjc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

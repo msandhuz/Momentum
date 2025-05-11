@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary colors -->
+        <item name="colorPrimary">@color/md_primary</item>
+        <item name="colorPrimaryVariant">@color/md_primary_container</item>
+        <item name="colorOnPrimary">@color/md_on_primary</item>
+        <item name="actionBarSize">?android:attr/actionBarSize</item>
+        <item name="android:colorControlActivated">@color/colorPrimary</item>
+
+        <!-- Secondary colors -->
+        <item name="colorSecondary">@color/md_secondary</item>
+        <item name="colorSecondaryVariant">@color/md_secondary_container</item>
+        <item name="colorOnSecondary">@color/md_on_secondary</item>
+
+        <!-- Status and navigation bars -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:navigationBarColor">?attr/colorSurface</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+
+        <!-- Surface colors -->
+        <item name="colorSurface">@color/md_surface</item>
+        <item name="colorSurfaceVariant">@color/md_surface_variant</item>
+        <item name="colorOnSurface">@color/md_on_surface</item>
+        <item name="colorOnSurfaceVariant">@color/md_on_surface_variant</item>
+
+        <!-- Text colors -->
+        <item name="android:textColorPrimary">?attr/colorOnSurface</item>
+        <item name="android:textColorSecondary">?attr/colorOnSurfaceVariant</item>
+        <item name="android:textColorHint">?attr/colorOnSurfaceVariant</item>
+
+        <!-- CardView -->
+        <item name="cardViewStyle">@style/HabitCardStyle</item>
+
+        <!-- Button styles -->
+        <item name="materialButtonStyle">@style/Widget.MaterialComponents.Button</item>
+        <item name="borderlessButtonStyle">@style/Widget.MaterialComponents.Button.TextButton</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark">
+        <item name="android:textColorPrimary">?attr/colorOnPrimary</item>
+        <item name="android:textColorSecondary">?attr/colorOnPrimary</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light">
+        <item name="android:textColor">?attr/colorOnSurface</item>
+        <item name="android:background">?attr/colorSurface</item>
+    </style>
+
+    <style name="HabitCardStyle" parent="Widget.MaterialComponents.CardView">
+        <item name="shapeAppearance">@style/ShapeAppearance.MaterialComponents.SmallComponent</item>
+        <item name="cardElevation">4dp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="cardBackgroundColor">?attr/colorSurfaceVariant</item>
+        <item name="strokeColor">?attr/colorOutline</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+    <!-- Calendar dot style -->
+    <style name="ShapeAppearanceOverlay.Calendar.Dot" parent="">
+        <item name="cornerSize">50%</item>
+        <item name="android:fillColor">@color/colorAccent</item>
+        <item name="android:width">8dp</item>
+        <item name="android:height">8dp</item>
+    </style>
+
+    <!-- Add these if you need ripple effects -->
+    <style name="Widget.MaterialComponents.Button" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="rippleColor">?attr/colorPrimary</item>
+    </style>
+
+    <style name="AppTheme_Light" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/md_primary</item>
+        <item name="colorPrimaryDark">@color/md_primary_container</item>
+        <item name="colorOnPrimary">@color/md_on_primary</item>
+        <!-- Copy other relevant light theme attributes from AppTheme -->
+    </style>
+
+    <style name="AppTheme_Dark" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorPrimary">@color/md_primary</item>
+        <item name="colorPrimaryDark">@color/md_primary_container</item>
+        <item name="colorOnPrimary">@color/md_on_primary</item>
+        <!-- Copy other relevant dark theme attributes from AppTheme -->
+    </style>
+
+    <style name="AppTheme_System" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/md_primary</item>
+        <item name="colorPrimaryDark">@color/md_primary_container</item>
+        <item name="colorOnPrimary">@color/md_on_primary</item>
+        <!-- Copy other relevant system theme attributes from AppTheme -->
+    </style>
+
+</resources>
